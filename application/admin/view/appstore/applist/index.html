@@ -1,0 +1,37 @@
+<div class="panel panel-default panel-intro">
+    <div class="panel-body">
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active in" id="one">
+                <div class="widget-body no-padding">
+                    <div id="toolbar" class="toolbar">
+                        {:build_toolbar()}
+                    </div>
+                    <table id="table" class="table table-striped table-bordered table-hover" width="100%">
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<form action="/admin/appstore/applist/defaultApps" method="post"> 
+分配默认应用：<br />
+  <?php foreach ($allapps as $key => $value) { ?>
+       <label><input name="appid[]" type="checkbox" value=" <?php echo $value['id'] ?>" /> <?php echo $value['id'] ?> </label> 
+       <label> <?php echo $value['name'] ?> </label> 
+       <label> <?php echo $value['is_default'] == 1 ? '非默认' : '默认' ?> </label> <br /> 
+   <?php } ?>
+<input type="submit" value="Submit" />
+</form> 
+
+<form action="/admin/appstore/applist/defaultApps" method="post"> 
+取消默认应用：<br />
+  <?php foreach ($allapps as $key => $value) { ?>
+       <label><input name="appid[]" type="checkbox" value=" <?php echo $value['id'] ?>" /> <?php echo $value['id'] ?> </label> 
+       <label> <?php echo $value['name'] ?> </label> 
+       <label> <?php echo $value['is_default'] == 1 ? '非默认' : '默认' ?> </label> <br /> 
+   <?php } ?>
+   <input type="hidden" name="cancel" value="cancel">
+<input type="submit" value="Submit" />
+</form> 

@@ -1,0 +1,32 @@
+.weui-cells__title.style1 {
+  position: relative;
+}
+.weui-cells__title.style1 .pos {
+  position: absolute;
+  right: 15px;
+  color: #fb576f;
+}
+.jiaoyi-wrap .weui-cells__title.style1 {
+  margin-bottom: 15px;
+}
+.jiaoyi-wrap .weui-tab {
+  margin: 0 15px 15px;
+}
+.jiaoyi-wrap .weui-tab .weui-navbar {
+  border: 1px solid #fb576f;
+  border-radius: 2px;
+}
+.jiaoyi-wrap .weui-tab .weui-navbar .weui-navbar__item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.jiaoyi-wrap .weui-tab .weui-navbar .weui-navbar__item:after {
+  border-right-color: #fb576f;
+}
+.jiaoyi-wrap .weui-tab .weui-navbar .weui-navbar__item.weui-bar__item_on {
+  background: #fb576f;
+  color: #fff;
+}
+.jiaoyi-wrap .weui-msg__extra-area {
+  margin-bottom: 0;
+}

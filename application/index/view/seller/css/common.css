@@ -1,0 +1,89 @@
+@import url("lib/reset.css");
+@import url("lib/font/iconfont.css");
+@import url("lib/jquery-weui.min.css");
+@import url("https://res.wx.qq.com/open/libs/weui/1.1.0/weui.min.css");
+footer {
+  position: fixed;
+  bottom: 0;
+  background: #f6f6f6;
+  width: 100%;
+  height: 30px;
+}
+footer .copyright {
+  text-align: center;
+}
+footer .copyright img {
+  width: 60px;
+}
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+.weui-grid {
+  text-align: center;
+}
+.weui-grid i {
+  font-size: 26px;
+}
+.weui-grid i.style1 {
+  color: #006cff;
+}
+.weui-grid i.style2 {
+  color: #58c946;
+}
+.weui-grid i.style3 {
+  color: #f96a5d;
+}
+.weui-grid i.style4 {
+  color: #acdcf0;
+}
+.weui-grid i.style5 {
+  color: #d8bdf2;
+}
+.weui-grid i.style6 {
+  color: #718cd9;
+}
+.weui-grid i.style0 {
+  color: #888;
+}
+.weui-grid.dis {
+  color: #888;
+}
+.weui-grid.dis .weui-grid__label {
+  color: #888;
+}
+.data-grids {
+  padding-bottom: 30px;
+}
+.data-grids:before,
+.data-grids:after {
+  display: none;
+}
+.data-grids .weui-grid {
+  width: 50%;
+  color: #fff;
+}
+.data-grids .weui-grid:before {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.data-grids .weui-grid:active {
+  background: none;
+}
+.data-grids .weui-grid:after {
+  display: none;
+}
+.data-grids .weui-grid .data-hint .weui-grid__label {
+  font-size: 12px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.data-grids .weui-grid .data-cont {
+  text-align: center;
+  font-size: 24px;
+}
+a.weui-btn_primary {
+  background-color: #fb576f;
+  color: #fff;
+}
+a.weui-btn_primary:not(.weui-btn_disabled):active {
+  background-color: #e14e64;
+}

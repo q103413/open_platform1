@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>IconFont</title>
+    <link rel="stylesheet" href="demo.css?1494925388810">
+    <link rel="stylesheet" href="iconfont.css?1494925388810">
+</head>
+<body>
+    <div class="main markdown">
+        <h1>IconFont 图标</h1>
+        <ul class="icon_lists clear">
+            
+                <li>
+                <i class="icon iconfont icon-shijian"></i>
+                    <div class="name">时间</div>
+                    <div class="fontclass">.icon-shijian</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-tixian"></i>
+                    <div class="name">提现</div>
+                    <div class="fontclass">.icon-tixian</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-jiantou"></i>
+                    <div class="name">箭头</div>
+                    <div class="fontclass">.icon-jiantou</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-icon"></i>
+                    <div class="name">user</div>
+                    <div class="fontclass">.icon-icon</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-consult"></i>
+                    <div class="name">咨询</div>
+                    <div class="fontclass">.icon-consult</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-icon1460187914536"></i>
+                    <div class="name">二维码</div>
+                    <div class="fontclass">.icon-icon1460187914536</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-jiaoyi"></i>
+                    <div class="name">流水统计</div>
+                    <div class="fontclass">.icon-jiaoyi</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-wuyefuwu"></i>
+                    <div class="name">物业服务</div>
+                    <div class="fontclass">.icon-wuyefuwu</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-icon1"></i>
+                    <div class="name">交易</div>
+                    <div class="fontclass">.icon-icon1</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-offline"></i>
+                    <div class="name">特权－敬请期待</div>
+                    <div class="fontclass">.icon-offline</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-liuliang"></i>
+                    <div class="name">流量</div>
+                    <div class="fontclass">.icon-liuliang</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-shuidian"></i>
+                    <div class="name">水电</div>
+                    <div class="fontclass">.icon-shuidian</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-fenrun"></i>
+                    <div class="name">流水</div>
+                    <div class="fontclass">.icon-fenrun</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-guanggao"></i>
+                    <div class="name">广告</div>
+                    <div class="fontclass">.icon-guanggao</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-ziliao"></i>
+                    <div class="name">资料</div>
+                    <div class="fontclass">.icon-ziliao</div>
+                </li>
+            
+        </ul>
+
+        <h2 id="font-class-">font-class引用</h2>
+        <hr>
+
+        <p>font-class是unicode使用方式的一种变种，主要是解决unicode书写不直观，语意不明确的问题。</p>
+        <p>与unicode使用方式相比，具有如下特点：</p>
+        <ul>
+        <li>兼容性良好，支持ie8+，及所有现代浏览器。</li>
+        <li>相比于unicode语意明确，书写更直观。可以很容易分辨这个icon是什么。</li>
+        <li>因为使用class来定义图标，所以当要替换图标时，只需要修改class里面的unicode引用。</li>
+        <li>不过因为本质上还是使用的字体，所以多色图标还是不支持的。</li>
+        </ul>
+        <p>使用步骤如下：</p>
+        <h3 id="-fontclass-">第一步：引入项目下面生成的fontclass代码：</h3>
+
+
+        <pre><code class="lang-js hljs javascript"><span class="hljs-comment">&lt;link rel="stylesheet" type="text/css" href="./iconfont.css"&gt;</span></code></pre>
+        <h3 id="-">第二步：挑选相应图标并获取类名，应用于页面：</h3>
+        <pre><code class="lang-css hljs">&lt;<span class="hljs-selector-tag">i</span> <span class="hljs-selector-tag">class</span>="<span class="hljs-selector-tag">iconfont</span> <span class="hljs-selector-tag">icon-xxx</span>"&gt;&lt;/<span class="hljs-selector-tag">i</span>&gt;</code></pre>
+        <blockquote>
+        <p>"iconfont"是你项目下的font-family。可以通过编辑项目查看，默认是"iconfont"。</p>
+        </blockquote>
+    </div>
+</body>
+</html>

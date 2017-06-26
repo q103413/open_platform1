@@ -1,0 +1,57 @@
+<form id="add-form" class="form-horizontal form-ajax" role="form" data-toggle="validator" method="POST" enctype="multipart/form-data" action="">
+    <div class="form-group">
+        <label for="role_id" class="control-label col-xs-12 col-sm-2">{:__('Group')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_select('group[]', $groupdata, null, ['class'=>'form-control selectpicker', 'multiple'=>'', 'required'=>''])}
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="appname" class="control-label col-xs-12 col-sm-2">应用名称</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="text" class="form-control" id="appname" name="row[appname]" value="" required="required" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="applogo" class="control-label col-xs-12 col-sm-2">应用logo</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="text" class="form-control" id="applogo" name="row[applogo]" value="" required="required" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="appurl" class="control-label col-xs-12 col-sm-2">应用URL</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="text" class="form-control" id="appurl" name="row[appurl]" value="" required="required" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="appstatus" class="control-label col-xs-12 col-sm-2">是否可用</label>
+        <div class="col-xs-12 col-sm-8">
+        <input name="row[appstatus]" type="radio" value="1" checked="checked"/>可用
+        <input name="row[appstatus]" type="radio" value="2" />不可用 
+<!--             <input type="text" class="form-control" id="appstatus" name="row[appstatus]" value="" required="required" />
+ -->        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="appstatus" class="control-label col-xs-12 col-sm-2">是否默认应用</label>
+        <div class="col-xs-12 col-sm-8">
+        <input name="row[apptype]" type="radio" value="1" checked="checked"/>不默认
+        <input name="row[apptype]" type="radio" value="2" />默认
+<!--             <input type="text" class="form-control" id="appstatus" name="row[appstatus]" value="" required="required" />
+ -->        </div>
+    </div>
+   <!--  <div class="form-group">
+        <label for="content" class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_radios('row[status]', ['normal'=>__('Normal'), 'hidden'=>__('Hidden')])}
+        </div>
+    </div> -->
+    <div class="form-group hidden layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

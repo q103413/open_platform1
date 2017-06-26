@@ -1,0 +1,311 @@
+@import url("lib/reset.css");
+@import url("lib/font/iconfont.css");
+@import url("lib/jquery-weui.min.css");
+@import url("https://res.wx.qq.com/open/libs/weui/1.1.0/weui.min.css");
+footer {
+  position: fixed;
+  bottom: 0;
+  background: #f6f6f6;
+  width: 100%;
+  height: 30px;
+}
+footer .copyright {
+  text-align: center;
+}
+footer .copyright img {
+  width: 60px;
+}
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+.weui-grid {
+  text-align: center;
+}
+.weui-grid i {
+  font-size: 26px;
+}
+.weui-grid i.style1 {
+  color: #006cff;
+}
+.weui-grid i.style2 {
+  color: #58c946;
+}
+.weui-grid i.style3 {
+  color: #f96a5d;
+}
+.weui-grid i.style4 {
+  color: #acdcf0;
+}
+.weui-grid i.style5 {
+  color: #d8bdf2;
+}
+.weui-grid i.style6 {
+  color: #718cd9;
+}
+.weui-grid i.style0 {
+  color: #888;
+}
+.weui-grid.dis {
+  color: #888;
+}
+.weui-grid.dis .weui-grid__label {
+  color: #888;
+}
+.data-grids {
+  padding-bottom: 30px;
+}
+.data-grids:before,
+.data-grids:after {
+  display: none;
+}
+.data-grids .weui-grid {
+  width: 50%;
+  color: #fff;
+}
+.data-grids .weui-grid:before {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.data-grids .weui-grid:active {
+  background: none;
+}
+.data-grids .weui-grid:after {
+  display: none;
+}
+.data-grids .weui-grid .data-hint .weui-grid__label {
+  font-size: 12px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.data-grids .weui-grid .data-cont {
+  text-align: center;
+  font-size: 24px;
+}
+a.weui-btn_primary {
+  background-color: #fb576f;
+  color: #fff;
+}
+a.weui-btn_primary:not(.weui-btn_disabled):active {
+  background-color: #e14e64;
+}
+.weui-cells__title.style1 {
+  position: relative;
+}
+.weui-cells__title.style1 .pos {
+  position: absolute;
+  right: 15px;
+  color: #fb576f;
+}
+.jiaoyi-wrap .weui-cells__title.style1 {
+  margin-bottom: 15px;
+}
+.jiaoyi-wrap .weui-tab {
+  margin: 0 15px 15px;
+}
+.jiaoyi-wrap .weui-tab .weui-navbar {
+  border: 1px solid #fb576f;
+  border-radius: 2px;
+}
+.jiaoyi-wrap .weui-tab .weui-navbar .weui-navbar__item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.jiaoyi-wrap .weui-tab .weui-navbar .weui-navbar__item:after {
+  border-right-color: #fb576f;
+}
+.jiaoyi-wrap .weui-tab .weui-navbar .weui-navbar__item.weui-bar__item_on {
+  background: #fb576f;
+  color: #fff;
+}
+.jiaoyi-wrap .weui-msg__extra-area {
+  margin-bottom: 0;
+}
+body {
+  background: #f6f6f6;
+}
+.wrap {
+  min-height: 100%;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.cont-hd {
+  position: relative;
+  background-color: #fb576f;
+  background: -webkit-linear-gradient(left, #f96d58 0%, #fb576f 100%);
+}
+.cont-hd .info {
+  padding: 15px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.cont-hd .info .headicon img {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.cont-hd .info .headicon h2 {
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  vertical-align: middle;
+}
+.cont-hd .info .user {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.cont-hd .info .user i {
+  font-size: 20px;
+  color: #fff;
+}
+.cont-hd .data h3 {
+  padding-left: 20px;
+  color: #f2f2f2;
+  font-size: 12px;
+}
+.cont-hd .data h3 i {
+  font-size: 12px;
+  margin-right: 5px;
+}
+.cont-hd .data .data-grids {
+  padding-bottom: 30px;
+}
+.cont-hd .data .data-grids:before {
+  display: none;
+}
+.cont-hd .data .data-grids .weui-grid {
+  width: 50%;
+  color: #fff;
+}
+.cont-hd .data .data-grids .weui-grid:before {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.cont-hd .data .data-grids .weui-grid:after {
+  display: none;
+}
+.cont-hd .data .data-grids .weui-grid .data-hint .weui-grid__label {
+  font-size: 12px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.cont-hd .data .data-grids .weui-grid .data-cont {
+  text-align: center;
+  font-size: 24px;
+}
+.cont-hd .dots {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+  left: 0;
+}
+.cont-hd .dots .dots-inner {
+  display: inline-block;
+}
+.cont-hd .dots .dots-inner .ico-dot {
+  background: rgba(255, 255, 255, 0.5);
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  display: inline-block;
+  margin-right: 5px;
+}
+.cont-hd .dots .dots-inner .ico-dot.current {
+  width: 6px;
+  height: 6px;
+  background: #fff;
+}
+/*�û�����*/
+.user-container .cont-hd .info .headicon {
+  text-align: center;
+}
+.user-container .cont-hd .info .headicon img {
+  width: 64px;
+  height: 64px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+.user-container .cont-hd .info .headicon p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.user-container .cont-hd .data .data-grids {
+  background: rgba(0, 0, 0, 0.1);
+  padding-bottom: 0;
+}
+.user-container .cont-hd .data .data-grids .weui-grid {
+  padding: 10px;
+  width: 33.33333333%;
+}
+.user-container .cont-hd .data .data-grids .weui-grid:before {
+  display: none;
+}
+.user-container .cont-hd .data .data-grids .weui-grid:active {
+  background: none;
+}
+.user-container .cont-bd .weui-cells {
+  font-size: 14px;
+}
+.user-container .cont-bd .weui-cells:first-child {
+  margin-top: 0;
+}
+/*�տ���ά��*/
+.code-container .wrap {
+  position: relative;
+  text-align: center;
+  padding-bottom: 0;
+}
+.code-container .wrap .bg {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.code-container .wrap .bg img {
+  width: 100%;
+}
+.code-container .wrap .cont-bd {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 50px;
+}
+.code-container .wrap .cont-bd h2 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.code-container .wrap .cont-bd .code p {
+  background: #fff;
+  padding: 15px 15px 10px;
+  display: inline-block;
+}
+.code-container .wrap .cont-bd .code p img {
+  width: 150px;
+  height: 150px;
+}
+.code-container .wrap .cont-bd .code h3 {
+  font-size: 18px;
+}
+.code-container .wrap .cont-bd .hint {
+  padding: 15px;
+  text-align: left;
+  font-size: 12px;
+  color: #888;
+}
+.code-container .wrap .cont-bd .qudao {
+  margin-top: 40px;
+}
+.code-container .wrap .cont-bd .qudao img {
+  width: 300px;
+}
+.hint-wrap .wrap .detail {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+}
